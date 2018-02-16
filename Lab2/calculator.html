@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+<script>
+
+function calculate() {
+
+
+var x = parseFloat(document.getElementById("x").innerHTML);
+var y = parseFloat(document.getElementById("y").innerHTML);
+
+
+var output1 = (y / 2) * (3 - x);
+var output2 = x % 2;
+var output3 = y / x;
+
+
+document.getElementById("output1").innerHTML = output1;
+document.getElementById("output2").innerHTML = output2;
+document.getElementById("output3").innerHTML = output3;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<p>
+x = <span id="x"> 2</span>
+</p>
+<p>
+y = <span id="y"> 9</span>
+</p>
+
+<br><br>
+
+<p>
+(y/2) * (3 -x) = <span id="output1" style="color: red;"> </span>
+</p>
+
+<p>
+x % 2 = <span id="output2" style="color: red;"> </span>
+</p>
+
+<p>
+y / x = <span id="output3" style="color: red;"> </span>
+</p>
+
+<button onclick="calculate()">Calculate</button>
+</body>
+
+</html>
