@@ -1,0 +1,31 @@
+<html>
+<head>
+  
+    <title>MEMBERS</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-3.2.1.js"> </script>
+    <script type="text/javascript" >
+        $(document).ready(function () {
+            alert("onLoad");
+
+            $.getJSON('members.json', function (data) {
+                $.each(data.member, function (i, f) {
+              
+                    var mLevel = $("#membershipLevels").text();
+                    var mMember = $("#members").text();
+
+                    $("#divL #membershipLevels").text(mLevel + " " + f.level + " , ");
+                    $("#divM #members").text(mMember + " " + f.name + " , ");
+
+                });
+
+            });
+        });
+    </script>
+<div id="divL"><span id="membershipLevels"
+        style="color: #0000FF; font-weight: bold; font-size: larger;">Membership Levels: </span></div>
+<hr />
+<div id="divM" style="font-weight: bold; color: #000000"><span id="members">Members: </span></div>
+</body>
+</html>

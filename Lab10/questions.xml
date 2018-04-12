@@ -1,0 +1,26 @@
+<questions>
+<question id="question1">Describe the purpose of AJAX. What advantage does AJAX provide over a traditional HTML form submit
+<answer>
+    The purpose of AJAX to enable asynchronous function calls within an browser to the back end web server without reloading the entire page.
+    In traditional HTML, at every form submit (also called postback), the entire page gets submitted thereby giving a feeling of
+    entire page flickering (or refreshing). In AJAX only the HTML section that is configured for asynchronous call gets a flickering feeling because thats the
+    only section that gets submitted back to web server.
+  
+</answer>
+</question>
+<question id="question2">Describe the role of JSON and XML with AJAX
+<answer>
+      JSON and XML are simple structured text data that can be passed as a simple string to
+      any program easily. It is independent of database. For Ajax implementation like jQuery, it becomes easier
+      once the data is available in such simple formats. It does not has the overload of connecting
+      to secure databases in the backend. It frees the back end and lets the front end work smoothly with the limited desired data.
+</answer>
+</question>
+<question id="question3">If you had to choose just one, which would you choose: XML or JSON? Why?
+<answer>
+    JSON works well with Javascript language. Even Jquery that provides
+    reuse functionality for AJAX implementation using Javascript.
+    Most browser client side scripts are javascript based.
+</answer>
+</question>
+</questions>
